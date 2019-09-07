@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/054cea2f48.js"></script>
+    <link rel="stylesheet" href="main/owl.carousel.css" />
+    <link rel="stylesheet" href="main/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="main/style.css" />
+     <link rel="stylesheet" href="main/style1.css">
+     <link rel="stylesheet" href="main/responsive.css">
+
+     <style>
+        @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+        
+        html,
+        body {
+          background-color: #a9d7d1;
+          text-align: center;
+          font-family: 'Raleway', Helvetica, sans-serif;
+          min-width: 320px;
+        }
+        
+        header {
+          font-size: 2em;
+          font-weight: bold;
+          margin: 20px;
+        }
+        
+        #form-outer {
+          background-color: rgb(250, 250, 250);
+          margin: 0 auto;
+          border-radius: 4px;
+          width: 75%;
+          max-width: 900px;
+          padding: 10px;
+          padding-top: 20px;
+        }
+        
+        .labels {
+          display: inline-block;
+          text-align: right;
+          width: 40%;
+          padding: 5px;
+          vertical-align: top;
+          margin-top: 10px;
+        }
+        
+        .rightTab {
+          display: inline-block;
+          text-align: left;
+          width: 48%;
+          vertical-align: middle;
+        }
+        
+        .input-field {
+          height: 20px;
+          width: 280px;
+          padding: 5px;
+          margin: 10px;
+          border: 1px solid #c0c0c0;
+          border-radius: 2px;
+        }
+        
+        #userAge {
+          width: 40px;
+        }
+        
+        .userRatings,
+        input[type="checkbox"] {
+          float: left;
+          margin-right: 5px;
+        }
+        
+        #submit {
+          background-color: #59ace0;
+          border-radius: 4px;
+          color: white;
+          font-size: 1em;
+          height: 40px;
+          width: 96px;
+          margin: 10px;
+          border: 0px solid;
+        }
+        
+        .dropdown {
+          height: 35px;
+          width: 140px;
+          padding: 5px;
+          margin: 10px;  
+          margin-top: 15px;
+          border: 1px solid #c0c0c0;
+          border-radius: 2px;
+        }
+        
+        .radio, .checkbox {
+          position: relative;
+          left: -43px;
+          margin-left: 10px;
+          display: block;
+          padding-bottom: 10px;
+        }
+        
+        @media screen and (max-width: 833px) {
+          .input-field {
+            width: 80%;
+          }
+          select {
+            width: 90%;
+          }
+        }
+        
+        @media screen and (max-width: 520px) {
+          .labels {
+            width: 100%;
+            text-align: left;
+          }
+          .rightTab {
+            width: 80%;
+            float: left;
+          }
+          .input-field {
+            width: 100%;
+          }
+          select {
+            width: 100%;
+          }
+        }
+        .title{
+          font-family: 'SolaimanLipi';
+        }
+        @font-face {
+          font-family: 'SolaimanLipi';
+          src: url('font/SolaimanLipi.eot');
+          src: url('font/SolaimanLipi.woff') format('woff'),
+               url('font/SolaimanLipi.ttf') format('truetype'),
+               url('font/SolaimanLipi.svg#SolaimanLipiNormal') format('svg'),
+               url('font/SolaimanLipi.eot?#iefix') format('embedded-opentype');
+          font-weight: normal;
+          font-style: normal;
+        }
+        </style>
+        
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="circle fixed-top">
+      <ul>
+        <img class="logo float-left" src="image/logo.png" alt="" />
+        <li><a href="index.html">Home |</a></li>
+        <li><a href="https://facebook.com">About |</a></li>
+        <li><a href="#">Services |</a></li>
+        <li><a href="reg.html">Registration</a></li>
+      </ul>
+      <div class="button">
+        <a class="btn-open" href="#">
+          <!-- <i class="fas fa-bars"></i> -->
+        </a>
+      </div>
+    </nav>
+    <div class="overlay">
+      <div class="wrap">
+        <ul class="wrap-nav">
+          <li>
+            <a href="#">About</a>
+            <ul>
+              <li><a href="#">About Company</a></li>
+              <li><a href="#">Designers</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Pets</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Services</a>
+            <ul>
+              <li><a href="https://www.google.hr/">Web Design</a></li>
+              <li><a href="#">Development</a></li>
+              <li><a href="#">Apps</a></li>
+              <li><a href="#">Graphic design</a></li>
+              <li><a href="#">Branding</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="reg.html">Registration</a>
+            <ul>
+              <li><a href="reg.html">Web</a></li>
+              <li><a href="#">Graphic</a></li>
+              <li><a href="#">Apps</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="social">
+          <a href="http://mario-loncarek.from.hr/">
+            <div class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="social-icon">
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="social-icon">
+              <i class="fab fa-dribbble"></i>
+            </div>
+          </a>
+          <p>
+            Wish You Nice Journey
+          </p>
+          <p class="text-success">Railway Family</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- reg form -->
+
+    <br><br><br><br>
+    <h1 id="title">রেল পরিবার সদস্য ফর্ম</h1>
+    <div id="form-outer">
+      <p id="description">
+      Write Your Proper Description For Membership <br>আপনার সঠিক তথ্য লিখুন সদস্য পদ এর জন্য 
+      </p>
+      <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+        <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" for="name">* Name/নাম(English): </label>
+          </div>
+          <div class="rightTab">
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+          </div>
+        </div>
+    <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" for="name">* নাম ( বাংলা ): </label>
+          </div>
+          <div class="rightTab">
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="email-label" for="email">* Email/ই -মেইল: </label>
+          </div>
+          <div class="rightTab">
+            <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="number-label" for="age">* Age/বয়স: </label>
+          </div>
+          <div class="rightTab">
+            <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="email-label" for="email">* Father's name/বাবার নাম: </label>
+          </div>
+          <div class="rightTab">
+            <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your father's name">
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="number-label" for="age">* Mother's Name/:মায়ের নাম : </label>
+          </div>
+          <div class="rightTab">
+            <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Enter your mother's name">
+          </div>
+        </div>
+  <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" for="name">* Permanent Address/স্থানীয় ঠিকানা: </label>
+          </div>
+          <div class="rightTab">
+            <textarea autofocus rows="4" cols="30" type="text" name="name" id="name"  placeholder="Enter your address" required></textarea>
+          </div>
+        </div>
+  <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" for="name">* Present Address/বর্তমান ঠিকানা: </label>
+          </div>
+          <div class="rightTab">
+            <textarea autofocus rows="4" cols="30" type="text" name="name" id="name"  placeholder="Enter your address" required></textarea>
+          </div>
+        </div>
+  <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" for="name">* Blood Group/রক্ত : </label>
+          </div>
+          <div class="rightTab">
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your blood group" required>
+          </div>
+        </div>
+    <div class="rowTab">
+          <div class="labels">
+            <label id="number-label" for="age">* Moblie No./: টেলিফোন নম্বর :</label>
+          </div>
+          <div class="rightTab">
+            <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Phone Number">
+          </div>
+        </div>
+
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+
+
+  
+     
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/dd4ddc9a8f.js"></script>
+  <script src="main/owl.carousel.min.js"></script>
+  <script src="main/javascript.js"></script>
+</html>
